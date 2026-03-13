@@ -2,55 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | QR code component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    body {
-      font-family: 'Outfit', sans-serif;
-      background: hsl(216, 15%, 48%);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-    .qr-code {
-      background: hsl(0, 0%, 100%);
-      border-radius: 5%;
-      box-shadow: 0px 10px 20px hsl(0, 0%, 0%, 0.2);
-      padding: 30px;
-      text-align: center;
-      width: 300px;
-      margin: auto;
-    }
-    .qr-code img {
-      margin-bottom: 20px;
-      width: 100%;
-      border-radius: 5%;
-    }
-    .qr-code h1 {
-      font-size: 20px;
-      margin-bottom: 15px;
-      color: hsl(218, 44%, 22%);
-    }
-    .qr-code p {
-      font-size: 16px;
-      color: hsl(216, 15%, 48%);
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Component - Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <div class="qr-code">
-    <img src="./images/image-qr-code.png" alt="QR code">
-    <h1>Improve your front-end skills by building projects</h1>
-    <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+<body class="bg-secondary-subtle">
+  <div class="container vh-100 d-flex align-items-center justify-content-center">
     
+    <div class="card p-3 border-0 shadow-sm" style="max-width: 320px; border-radius: 20px;">
+      <img src="./images/image-qr-code.png" class="card-img-top rounded-4" alt="QR Code">
+      <div class="card-body text-center p-4">
+        <h5 class="card-title fw-bold text-dark">
+          Improve your front-end skills by building projects
+        </h5>
+        <p class="card-text text-muted small">
+          Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+        </p>
+      </div>
+    </div>
   </div>
 </body>
 </html>

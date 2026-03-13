@@ -2,103 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Blog preview card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-<style>
-  body {
-    background-color: hsl(47, 88%, 63%);
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .blog-preview-card {
-    max-width: 350px;
-    width: 90%;
-    padding: 24px;
-    border-radius: 20px;
-    background-color: #fff;
-    border: 1px solid #111;
-    box-shadow: 8px 8px 0px 0px #000;
-  }
-
-  .blog-preview-card img.main-img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 24px;
-  }
-
-
-  #Learning {
-    background-color: hsl(47, 88%, 63%);
-    display: inline-block;
-    padding: 4px 12px;
-    border-radius: 4px;
-    font-weight: 800;
-    font-size: 14px;
-    margin-bottom: 12px;
-  }
-
-  .publish-date {
-    font-size: 16px;
-    margin-bottom: 12px;
-  }
-
-  .blog-content {
-    text-align: left;
-  }
-
-  .blog-content h1 {
-    font-size: 24px;
-    margin: 12px 0;
-    cursor: pointer;
-    transition: color 0.2s ease;
-  }
-
-  .blog-content h1:hover {
-    color: hsl(47, 88%, 63%);
-  }
-
-  .blog-content p {
-    color: hsl(0, 0%, 42%);
-    line-height: 1.5;
-    margin-bottom: 24px;
-  }
-
-  .author-info {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-weight: 800;
-  }
-
-  .author-info img {
-    width: 32px;
-    height: 32px;
-  }
-</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Preview Card - Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<div class="blog-preview-card">
-  <img src="./assets/images/illustration-article.svg" alt="Blog preview image" class="main-img">
-  <div class="blog-content">
-    <span id="Learning">Learning</span>
-    <p class="publish-date">Published 21 Dec 2023</p>
-    <h1>HTML & CSS foundations</h1>
-    <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
-    <div class="author-info">
-      <img src="./assets/images/image-avatar.webp" alt="Author's avatar">
-      <span>Greg Hooper</span>
+<body class="bg-yellow d-flex align-items-center justify-content-center vh-100">
+  <div class="card custom-shadow p-3" style="max-width: 380px; border-radius: 20px; border: 1px solid #000;">
+    <img src="./assets/images/illustration-article.svg" class="rounded-3 mb-3" alt="Article Illustration">
+    <div class="card-body p-0">
+      <span class="badge bg-yellow text-dark fw-bold px-3 py-2 mb-3">Learning</span>
+      <p class="small mb-2 text-dark">Published 21 Dec 2023</p>
+      <h2 class="h4 fw-bolder mb-3 card-hover-title">HTML & CSS foundations</h2>
+      <p class="text-muted mb-4">
+        These languages are the backbone of every website, defining structure, content, and presentation.
+      </p>
+      <div class="d-flex align-items-center gap-2">
+        <img src="./assets/images/image-avatar.webp" width="32" height="32" alt="Avatar">
+        <span class="fw-bold">Greg Hooper</span>
+      </div>
     </div>
   </div>
-</div>
 </body>
 </html>

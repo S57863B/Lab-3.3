@@ -1,0 +1,7 @@
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #D5E1EF !important;
+}
+.card-title {
+    color: hsl(218, 44%, 22%);
+}
